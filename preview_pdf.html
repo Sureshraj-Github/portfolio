@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suresh Raj - Resume</title>
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: hsl(0, 0%, 0%);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      animation: fadeIn 1s ease;
+    }
+
+    
+
+    .container {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 900px;
+      height: 80vh;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px hsl(0, 0%, 0%);
+      background: white;
+      animation: zoomIn 0.8s ease;
+    }
+
+   header {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  animation: slideDown 0.8s ease;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.back-button {
+  text-decoration: none;
+  background-color: hsl(231, 83%, 25%);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px hsl(0, 0%, 0%);
+}
+
+.back-button:hover {
+  background-color: hsl(231, 94%, 35%);
+  transform: translateY(-2px);
+}
+
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 70vh;
+        max-width: 95%;
+      }
+      .back-button {
+        font-size: 0.75rem;
+        padding: 6px 14px;
+      }
+    }
+    .logo {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+  <div class="header-content">
+    <h1 class="logo">Suresh Raj - Resume</h1>
+    <a href="./index.html" class="back-button">← Back to Website</a>
+  </div>
+</header>
+
+  <div class="container">
+    <!-- Back button (top) -->
+
+    <!-- PDF iframe -->
+    <iframe src="./assets/pdf/my_resume.pdf"></iframe>
+<br>
+    <!-- Back button (bottom) -->
+    <a href="./index.html" class="back-button">← Back to Website</a>
+  </div>
+</body>
+
+</html>
