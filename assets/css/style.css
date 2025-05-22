@@ -13,6 +13,7 @@
   --independence: hsl(225, 24%, 27%);
   --orange-soda: hsl(7, 96%, 61%);
   --space-cadet: #020816;
+  --violo:#6b18b9;
   --fiery-rose: hsl(353, 83%, 65%);
   --klein-blue: hsl(230, 80%, 39%);
   --bluetiful: hsl(222, 88%, 55%);
@@ -170,7 +171,7 @@ body {
   transition: var(--transition-2);
 }
 
-.btn-primary.blue { background-color: var(--klein-blue); }
+.btn-primary.blue { background-color: var(--violo); }
 
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--space-cadet); }
 
@@ -994,19 +995,19 @@ textarea.contact-input {
   .abs-icon-1 {
     top: 50px;
     left: -120px;
-    background-color: var(--bluetiful);
+    background-color: var(--midnight-blue);
   }
 
   .abs-icon-2 {
     top: -40px;
     right: -40px;
-    background-color: var(--gold-web-golden);
+    background-color: var(--midnight-blue);
   }
 
   .abs-icon-3 {
     bottom: -40px;
     left: 250px;
-    background-color: var(--rufous);
+    background-color: var(--midnight-blue);
   }
 
 
